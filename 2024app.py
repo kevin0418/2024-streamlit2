@@ -1,7 +1,8 @@
 import streamlit as st
+import pandas as pd
 from streamlit_chat import message
 from streamlit.components.v1 import html
-import pandas as pd
+
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import json
