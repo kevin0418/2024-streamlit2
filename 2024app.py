@@ -35,6 +35,7 @@ with st.form('form', clear_on_submit=True):
     user_input = st.text_input('고민이 무엇인가요 ? ', '')
     submitted = st.form_submit_button('전송  /  Enter ')
 
+
 if submitted and user_input:
     embedding = model.encode(user_input)
 
